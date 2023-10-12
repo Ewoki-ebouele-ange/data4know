@@ -1,38 +1,268 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+  position: fixed;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 15%;
+  transition: 0.6s;
+  z-index: 3;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sticky{
+  padding: 10px 15%;
+  background-color: #000;
+  z-index: 3;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.img_data4know img{
+  width: 80px;
+  transition: 0.6s;
+}
+
+.sticky .img_data4know img{
+  width: 60px;
+}
+
+.links ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links ul li{
+  position: relative;
+  list-style-type: none;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.links ul li a{
+  position: relative;
+  margin: 0 15px;
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: 2px;
+  font-weight: 500px;
+  transition: 0.6s;
+}
+
+.menu_btn{
+  display: none;
+}
+
+.banner{
+  display: flex;
+  padding: 150px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(./Assets/header-bg.svg);
+  background-position: bottom calc(-8svh + 25%) right 34%;
+  background-size: calc(max(154svw, 280svh));
+  background-repeat: no-repeat;
+  z-index: 2;
+  gap: 30px;
+}
+
+.lib_pot{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.banner p{
+  color: #fff;
+}
+
+.lib_pot .lib{
+  margin-bottom: 0;
+  font-size: calc(min(7.2svh, 3.3svw));
+  line-height: 125%;
+  white-space: nowrap;
+}
+
+.lib_pot .avec{
+  margin: 0;
+  font-size: calc(min(8.5svh, 4.2svw));
+  width: fit-content;
+  line-height: 150%;
+  font-weight: bold;
+  font-family: Criteria CF, sans-serif;
+  transform: scale(0.95, 1);
+  transform-origin: 0 0;
+  white-space: nowrap;
+}
+
+.potentiel{
+  color: #ff5043;
+}
+
+.potentiel:hover{
+  font-weight: 400;
+  background-size: 400% 100%;
+  background-position: 100% 0;
+  background-image: linear-gradient(135deg, #ff5043 8%, #2d3bff 30%, #2d3bff 44%, #ff5043 66%);
+  transition-property: background-position;
+  transition-duration: .6s;
+  transition-timing-function: ease-out;
+  clip-path: inset(1px);
+  -webkit-text-fill-color: transparent;
+}
+
+.concret{
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding-bottom: 20px;
+}
+
+.concret p{
+  line-height: 125%;
+  font-size: calc(min(3.4svh, 1.8svw));
+  font-weight: 300;
+  font-family: 'Roboto', 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  
+}
+
+.concret p strong{
+  font-weight: 700;
+}
+
+.bta{
+  background-color: #ff5043;
+  border-radius: 15px;
+  font-size: 18px;
+  text-align: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  white-space: nowrap;
 }
 
-.App-link {
-  color: #61dafb;
+.bta:hover{
+  background-image: linear-gradient(135deg, #ff5043 30%, #2d3bff 50%, #ff5043 70%);
+  background-size: 400% 100%;
+  background-position: 100% 0;
+  transition-property: background-position;
+  transition-duration: .6s;
+  transition-timing-function: ease-out;
+  border: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.bta a{
+  color: #fff;
+  text-decoration: none;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.bta svg{
+  font-size: 30px;
+}
+
+.bta a span{
+  font-weight: 500;
+}
+
+@media screen and (max-width: 705px) {
+.banner{
+  padding:150px 100px 0 100px;
+}
+}
+
+@media screen and (max-width: 605px) {
+  .banner{
+    padding:150px 50px 0 50px;
   }
-  to {
-    transform: rotate(360deg);
+  .bta{
+    font-size: 15px;
+  }
+  }
+  
+
+@media screen and (max-width: 900px) {
+  .banner{
+    flex-direction: column;
+    padding-bottom: 0;
+    gap: 0;
+  }
+  .lib_pot .lib{
+    font-size: calc(min(5.5svh, 6.6svw));
+    line-height: 140%;
+    width: fit-content;
+    padding: 0 0 40px 0;
+    margin: 0;
+  }
+  
+  .lib_pot .avec{
+    font-size: calc(min(6.5svh, 8.4svw));
+    line-height: 150%;
+    transform: scale(0.95, 1);
+    transform-origin: 0 0;
+    padding: 0 0 45px 0;
+  }
+  .concret p{
+    line-height: 150%;
+    font-size: calc(min(3.2svh, 4svw));
+    margin: 0;    
+  }
+  .bta{
+    width: 90%;
+    padding: 10px;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  header{
+    padding: 40px 10%;
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .sticky{
+    position: fixed;
+    z-index: 20;
+  }
+  .menu_btn{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    background-color: #ff5043;
+    padding:  5px 5px 5px 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+  
+  .menu_btn svg{
+    margin-top: 6px;
+    font-size: 20px;
+  }
+  .links ul{
+    position: fixed;
+    flex-direction: column;
+    background-color: #000;
+    top: 74px;
+    left: -100%;
+    width: 100%;
+    align-items: end;
+    padding:10px 15% 15px 0;
+    z-index: 1;
+    transition: 0.3s;
+    gap: 10px;
+  }
+
+  .links ul.actived{
+    left: 0;
+}
+  
+}
+
