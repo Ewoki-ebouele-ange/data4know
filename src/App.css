@@ -114,6 +114,7 @@ header{
   transition-duration: .6s;
   transition-timing-function: ease-out;
   clip-path: inset(1px);
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
