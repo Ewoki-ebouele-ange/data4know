@@ -60,7 +60,6 @@ function App() {
         </div>
         <div className="links">
             <ul className={`${isMenuOpen ? "actived" : ""}`}>
-              <li><a href="#">Home</a></li>
               <li><a href="#">Services</a></li>
               <li><a href="#">À propos</a></li>
               <li><a href="#">Équipe</a></li>
@@ -84,7 +83,66 @@ function App() {
             </p>
             <span className='bta'><a href="#"> <span>Planifiez votre consultation gratuite</span> <FaChevronRight /></a></span>
           </div>
-      </div>      
+      </div>   
+
+      <div className="services">
+        <h1>NOS SERVICES</h1>
+        <p>Baseline vous accompagne des premiers pas de votre transformation numérique jusqu'à votre adoption de l'intelligence artificielle. À chaque étape, nous vous offrons un service adapté à vos besoins.</p>
+        <div className="service_card">
+          <div className="card_serv">
+            <span className='title'>Réflexion stratégique</span>
+            <a class="services-desc-link" href="#">
+              <div class="services-desc-brackets"></div>
+              <div class="services-desc-bg"></div>
+              <div class="services-desc-content d-flex align-items-center py-3 px-4">Analysez vos besoins et planifiez la prochaine étape de votre transformation numérique.</div>
+            </a>
+          </div>
+          <div className="card_serv">
+            <span className='title'>Réflexion stratégique</span>
+            <a class="services-desc-link" href="#">
+              <div class="services-desc-brackets"></div>
+              <div class="services-desc-bg"></div>
+              <div class="services-desc-content d-flex align-items-center py-3 px-4">Analysez vos besoins et planifiez la prochaine étape de votre transformation numérique.</div>
+            </a>
+          </div>
+          <div className="card_serv">
+            <span className='title'>Réflexion stratégique</span>
+            <a class="services-desc-link" href="#">
+              <div class="services-desc-brackets"></div>
+              <div class="services-desc-bg"></div>
+              <div class="services-desc-content d-flex align-items-center py-3 px-4">Analysez vos besoins et planifiez la prochaine étape de votre transformation numérique.</div>
+            </a>
+          </div>
+          <div className="card_serv">
+            <span className='title'>Réflexion stratégique</span>
+            <a class="services-desc-link" href="#">
+              <div class="services-desc-brackets"></div>
+              <div class="services-desc-bg"></div>
+              <div class="services-desc-content d-flex align-items-center py-3 px-4">Analysez vos besoins et planifiez la prochaine étape de votre transformation numérique.</div>
+            </a>
+          </div>
+          <div className="card_serv">
+            <span className='title'>Réflexion stratégique</span>
+            <a class="services-desc-link" href="#">
+              <div class="services-desc-brackets"></div>
+              <div class="services-desc-bg"></div>
+              <div class="services-desc-content d-flex align-items-center py-3 px-4">Analysez vos besoins et planifiez la prochaine étape de votre transformation numérique.</div>
+            </a>
+          </div>
+          <div className="card_serv">
+            <span className='title'>Réflexion stratégique</span>
+            <a class="services-desc-link" href="#">
+              <div class="services-desc-brackets"></div>
+              <div class="services-desc-bg"></div>
+              <div class="services-desc-content">Analysez vos besoins et planifiez la prochaine étape de votre transformation numérique.</div>
+            </a>
+          </div>
+        </div>
+        <div className='voy'>
+          <div className='voyez'><span>Voyez notre offre de services détaillée</span> <FaChevronRight /></div> 
+        </div>
+      </div>
+
     </div>
   );
 }

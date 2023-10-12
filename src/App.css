@@ -171,6 +171,134 @@ header{
   font-weight: 500;
 }
 
+.services{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  text-align: center;
+  padding: 100px 0;
+  gap: 20px;
+}
+
+.services h1{
+  font-size: 40px;
+}
+
+.services p {
+    flex: 0 0 75%;
+    max-width: 75%;
+    margin: 0%;
+}
+
+.service_card{
+  display: grid;   
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  grid-auto-flow: row;
+  width: 100%;
+  padding: 10px 150px;
+}
+
+.card_serv{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 15px;
+}
+
+.card_serv span{
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.services-desc-link {
+  position: relative;
+  color: black;
+  justify-content: center!important;
+  display: flex!important;
+  text-decoration: none;
+}
+
+.services-desc-link .services-desc-brackets {
+  transition: all .4s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 100%;
+  width: 100%;
+  border: 5px solid #2d3bff;
+}
+
+.services-desc-link .services-desc-bg {
+  transition: all .4s;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  height: 103%;
+  width: 85%;
+  margin: auto;
+}
+
+.services-desc-link .services-desc-content {
+  display: flex;
+  align-items: center;
+  transition: all .4s;
+  color: black;
+  z-index: 10;
+  padding: 1rem 1.5rem;
+}
+
+.services-desc-link:hover > .services-desc-brackets {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.voy{
+  display: flex;
+  padding: 2px;
+  background-color: #2d3bff;
+  border-radius: 5px;
+}
+
+.voy .voyez{
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  color: #2d3bff;
+}
+
+
+.voy .voyez:hover{
+  border-color: #2d3bff;
+    border-width: 2px;
+    color: #2d3bff;
+    background-color: #2d3bff;
+    background-size: 400% 100%;
+    background-position: 100% 0;
+    transition: all .6s ease-in-out;
+    background-image: linear-gradient(115deg, #2d3bff 30%, #ff5043 50%, transparent 70%);
+    font-weight: 400;
+    color: #fff;
+}
+
+@media screen and (max-width: 750px) {
+  .services{
+    padding: 50px 0;
+  }
+  .service_card{  
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px 100px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .service_card{  
+    padding: 10px 50px;
+  }
+}
+
 @media screen and (max-width: 705px) {
 .banner{
   padding:150px 100px 0 100px;
